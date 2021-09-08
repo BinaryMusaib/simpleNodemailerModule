@@ -21,7 +21,7 @@ var mailOptions = {
 
 };
 
-transporter.sendMail(mailOptions, function(error, info) {
+transporter.sendMail(mailOptions, (error, info) => {
     if (error)
         console.log('This is an' + error);
     else
